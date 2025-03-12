@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-12T13:01:52+08:00</updated>
+  <updated>2025-03-12T13:54:31+08:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -17,116 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>Generic (Feat. Object, Enum)</title>
-    <link href="http://localhost:4000/posts/Generic-(Feat.-Object,-Enum)/" rel="alternate" type="text/html" title="Generic (Feat. Object, Enum)" />
-    <published>2024-03-25T20:00:00+08:00</published>
-  
-    <updated>2024-03-25T20:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/Generic-(Feat.-Object,-Enum)/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Generic-(Feat.-Object,-Enum)/" />
-    <author>
-      <name>your_full_name</name>
-    </author>
-
-  
-    
-  
-
-  <summary>Generic이란?  JDK 1.5 부터 지원된 기능으로 클래스나 메서드에서 사용할 내부 데이터 타입을 컴파일 시 미리 지정 할 수 있는 방법이다.  예를 들어 ArrayList&amp;amp;lt;E&amp;amp;gt; 는 ArrayList의 요소 타입을 제네릭으로 처리하기 때문에 요소에 String, Integer 또는 커스텀 객체 등 데이터 타입을 다양하게 담을 수 있다.    제네릭 타입 변수가 들어갈 자리에는 기본 타입은 사용이 불가능하다. 래퍼 클래스(Wrapper Class)를  이용해야한다.  ArrayList&amp;amp;lt;int&amp;amp;gt; list = new ArrayList&amp;amp;lt;int&amp;amp;gt;(); // Type argument cannot be of primitive type 빌드 오류 !! ArrayList&amp;amp;lt;In...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>스트림(Stream)과 옵셔널(Optional)</title>
-    <link href="http://localhost:4000/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)%EA%B3%BC-%EC%98%B5%EC%85%94%EB%84%90(Optional)/" rel="alternate" type="text/html" title="스트림(Stream)과 옵셔널(Optional)" />
-    <published>2024-03-18T20:00:00+08:00</published>
-  
-    <updated>2024-03-18T20:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)%EA%B3%BC-%EC%98%B5%EC%85%94%EB%84%90(Optional)/</id>
-    <content type="text/html" src="http://localhost:4000/posts/%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)%EA%B3%BC-%EC%98%B5%EC%85%94%EB%84%90(Optional)/" />
-    <author>
-      <name>your_full_name</name>
-    </author>
-
-  
-    
-  
-
-  <summary>스트림이란?  java8 부터 추가된 기능으로 데이터의 흐름에서 원하는 조건을 거는 filter, 필터링된 값을 담는 map, 최종 결과물 만들기(Collect) 를 수행한다. 이전에도 외부반복자(for, while 등)를 이용하여 위 행위가 가능했으나, 스트림은 내부반복자를 이용하기 때문에 병렬처리가 쉬워지며 코드가 간결해진다.    스트림 단계 스트림을 생성, 중간연산 마다 중간 스트림 생성, 최종 스트림 생성 과정에서 중간 스트림이 생성될때마다 바로 연산이 진행되지 않는다.(지연-lazy) 최종 연산이 시작되면 최초 컬렉션 요소가 중간 스트림에서 연산되기 시작하여 최종 연산까지 수행한다.  스트림 생성 Collection과 Arrays는 stream() 메서드가 정의되어 있기 때문에 스트림을 생성...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>람다식(Lamda)</title>
-    <link href="http://localhost:4000/posts/%EB%9E%8C%EB%8B%A4-(Lamda)/" rel="alternate" type="text/html" title="람다식(Lamda)" />
-    <published>2024-03-10T21:00:00+08:00</published>
-  
-    <updated>2024-03-10T21:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/%EB%9E%8C%EB%8B%A4-(Lamda)/</id>
-    <content type="text/html" src="http://localhost:4000/posts/%EB%9E%8C%EB%8B%A4-(Lamda)/" />
-    <author>
-      <name>your_full_name</name>
-    </author>
-
-  
-    
-  
-
-  <summary>람다식 사용 방법 전제 조건 단 한개의 추상 메서드만 가지는 인터페이스 필요  interface public interface MaxNumber { 	int getMax(int num1, int num2); }   AS-IS MaxNumber maxNumber = new MaxNumber() { 	@Override 	public int getMax(int num1, int num2) { 		return num1 &amp;amp;gt;= num2 ? num1 : num2; 	} };  maxNumber.getMax(100, 101);   TO-BE MaxNumber maxNumber = (x,y)-&amp;amp;gt;(x&amp;amp;gt;=y) ? x:y; maxNumber.getMax(100, 101);   (자료형 매개변수명,...) -...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>DB별 varchar(n)의 n 의미</title>
-    <link href="http://localhost:4000/posts/DB-%EB%B3%84-varchar(n)-%EC%9D%98-n-%EC%9D%98%EB%AF%B8/" rel="alternate" type="text/html" title="DB별 varchar(n)의 n 의미" />
-    <published>2024-02-20T09:00:00+08:00</published>
-  
-    <updated>2024-02-20T09:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/DB-%EB%B3%84-varchar(n)-%EC%9D%98-n-%EC%9D%98%EB%AF%B8/</id>
-    <content type="text/html" src="http://localhost:4000/posts/DB-%EB%B3%84-varchar(n)-%EC%9D%98-n-%EC%9D%98%EB%AF%B8/" />
-    <author>
-      <name>your_full_name</name>
-    </author>
-
-  
-    
-  
-
-  <summary>Oracle  varchar2(10) 은 10 byte를 의미한다. oracle에서 영어는 1byte, 한글은 2byte 이기 때문에 그동안 막연하게 한글이 들어가는 컬럼은 100자 -&amp;amp;gt; varchar2(200) 으로 생성해왔다.   -- 테스트용 테이블 생성 CREATE TABLE test( 	name varchar2(10) );  -- 한글 10글자를 INSERT INSERT INTO test values(&amp;#39;일이삼사오육칠팔구십&amp;#39;);  Query execution failed  Reason: SQL Error [12899] [72000]: ORA-12899: value too large for column &amp;quot;TEST&amp;quot;.&amp;quot;NAME&amp;quot; (actual: 20, maximum: 10) -- 10byte ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Spring Boot3 &amp; Undertow 에서 HTTP Method 제한하기</title>
-    <link href="http://localhost:4000/posts/Spring-Boot3-&amp;-Undertow-%EC%97%90%EC%84%9C-HTTP-Method-%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="Spring Boot3 &amp;amp; Undertow 에서 HTTP Method 제한하기" />
-    <published>2024-02-08T09:00:00+08:00</published>
-  
-    <updated>2024-02-08T09:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/Spring-Boot3-&amp;-Undertow-%EC%97%90%EC%84%9C-HTTP-Method-%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Spring-Boot3-&amp;-Undertow-%EC%97%90%EC%84%9C-HTTP-Method-%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>your_full_name</name>
-    </author>
-
-  
-    
-  
-
-  <summary>모의침투 결과 불필요한 HTTP Method가 허용되어 있어 이에 대한 조치가 필요했다. 보통 WEB이나 WAS 설정파일을 건드려 제한 할 수 있으나, Spring Boot로 내장 WAS 를 사용중이며, Undertow를 사용중에 있어 이 환경의 설정을 처리하고 기록했다.     불필요한 메소드 사용 확인    cmd 창에서 아래 명령어를 통해 허용된 HTTP Method를 확인 할 수 있다.  &amp;amp;gt; curl -v -X OPTIONS https://{확인하고자 하는 웹URL} #### 요청정보 #### *   Trying [::1]:8070... *   Trying 127.0.0.1:8070... * Connected to localhost (127.0.0.1) port 8070 &amp;amp;gt; OPTIO...</summary>
-
-  </entry>
 
 </feed>
 
