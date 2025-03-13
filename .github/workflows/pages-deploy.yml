@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - gh-page # 또는 배포에 사용할 브랜치 이름
+      - master # 또는 배포에 사용할 브랜치 이름
 
 jobs:
   deploy:
