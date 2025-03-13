@@ -1,0 +1,29 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # 또는 배포에 사용할 브랜치 이름
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 또는 사용할 Node.js 버전
+
+      - name: Install dependencies
+        run: npm install # 또는 yarn install, pnpm install
+
+      - name: Build
+        run: npm run build # 또는 yarn build, pnpm build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site # 또는 빌드 결과물이 있는 폴더 이름
